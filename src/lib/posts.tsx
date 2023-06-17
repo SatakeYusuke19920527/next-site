@@ -9,7 +9,6 @@ export async function getAllPostsData() {
 export async function getAllPostIds() {
   const res = await fetch(new URL(apiUrl));
   const posts = await res.json();
-
   return posts.map((post: any) => {
     return {
       params: {

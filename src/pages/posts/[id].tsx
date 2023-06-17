@@ -12,7 +12,6 @@ export const getStaticPaths = async () => {
       id: String(post.id),
     },
   }));
-  console.log('🚀 ~ file: [id].tsx:15 ~ paths ~ paths:', paths);
   return {
     paths: paths,
     fallback: false,
